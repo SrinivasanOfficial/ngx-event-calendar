@@ -1,0 +1,19 @@
+<div class="nec-main-container">
+  <div class="nec-month-container">
+    <div class="nec-month">{{ selMonthName() }} {{ selYear() }}</div>
+    <div class="nec-month-change">
+      <button class="nec-prev-btn"></button>
+      <button class="nec-today-txt">Today</button>
+      <button class="nec-next-btn"></button>
+    </div>
+  </div>
+  <div
+    style="background-color: rgb(47, 0, 128)"
+    class="nec-week-container"
+  ></div>
+  <div style="background-color: rgb(27, 172, 107)" class="nec-days-container">
+    @for (item of itemsArr(); track $index) {
+    <div>{{ item }}</div>
+    }
+  </div>
+</div>

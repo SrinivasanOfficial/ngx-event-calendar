@@ -1,0 +1,56 @@
+.nec-main-container {
+  display: grid;
+  grid-auto-rows: 50px 50px auto;
+  height: 100%;
+  font-size: 1rem;
+
+  .nec-month-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    .nec-month {
+      color: #007aff;
+      font-size: 24px;
+    }
+
+    .nec-month-change {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #007aff;
+
+      .nec-today-txt {
+        color: #007aff;
+        border: none;
+        background: none;
+        font-size: 1rem;
+      }
+
+      .nec-prev-btn,
+      .nec-next-btn {
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .nec-prev-btn {
+        background: url("./../assets/svg/arrow-left.svg");
+        background-size: contain;
+      }
+
+      .nec-next-btn {
+        background: url("./../assets/svg/arrow-right.svg");
+        background-size: contain;
+      }
+    }
+  }
+
+  .nec-days-container {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(5, auto);
+  }
+}

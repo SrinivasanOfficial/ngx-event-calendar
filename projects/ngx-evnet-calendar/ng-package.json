@@ -3,5 +3,6 @@
   "dest": "../../dist/ngx-evnet-calendar",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": ["src/assets"]
 }

@@ -10,4 +10,8 @@ import { NgxEvnetCalendarComponent } from '../../../ngx-evnet-calendar/src/publi
 })
 export class AppComponent {
   title = 'main-app';
+
+  config = {
+    customDate: '1742407389000'
+  }
 }
